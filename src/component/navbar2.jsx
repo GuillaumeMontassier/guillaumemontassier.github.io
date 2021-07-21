@@ -1,14 +1,12 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { ExternalLink, GitHub, Linkedin } from "react-feather";
 
 const navigation = [
-  { name: "A propos", href: "#", current: true },
-  { name: "Parcours", href: "#", current: false },
+  { name: "About me", href: "#", current: true },
+  { name: "Studies", href: "#", current: false },
   { name: "Projects", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Contact me", href: "#", current: false },
 ];
 
 function classNames(...classes) {
@@ -24,8 +22,8 @@ export default function Example() {
             <div className="relative flex items-center justify-between h-16">
               <div className="flex-2 flex items-center justify-center sm:items-stretch">
                 {/* Title section */}
-                <div className="flex-shrink-0 flex items-center ">
-                  Mon Portfolio
+                <div className="flex-shrink-0 flex items-center text-xl antialiased font-semibold">
+                  Guillaume Montassier
                 </div>
               </div>
               {/* Tab section */}
@@ -62,7 +60,7 @@ export default function Example() {
                   </a>
                 </div>
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
