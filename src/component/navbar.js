@@ -15,14 +15,15 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-transparent">
+    // sticky top-0 to let it to the top
+    <Disclosure as="nav" className="bg-main_blue sticky top-0">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
               <div className="flex-2 flex items-center justify-center sm:items-stretch">
                 {/* Title section */}
-                <div className="flex-shrink-0 flex items-center text-xl antialiased font-semibold">
+                <div className="flex-shrink-0 flex text-main_white items-center text-xl antialiased font-semibold">
                   Guillaume Montassier
                 </div>
               </div>
@@ -60,7 +61,7 @@ export default function Navbar() {
                   </a>
                 </div>
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800">
+                <Disclosure.Button className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -72,7 +73,7 @@ export default function Navbar() {
             </div>
           </div>
           {/* Mobile poped-up menu */}
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="md:hidden absolute bg-main_blue w-screen">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <a

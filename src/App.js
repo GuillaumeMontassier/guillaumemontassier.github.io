@@ -8,7 +8,7 @@ import "./App.css";
 
 function App() {
   return (
-    // <div className="bg-gradient-to-r from-green-400 to-blue-500 body-font">
+    // <div className="text-gray-500 bg-gradient-to-r from-green-400 to-blue-500 body-font">
     <div className="text-gray-500 bg-black body-font">
       <Navbar />
       <About />

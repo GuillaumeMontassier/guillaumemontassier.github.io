@@ -3,40 +3,39 @@ import React from "react";
 export default function About() {
   return (
     <section id="about">
-      <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi, I'm Reed.
-            <br className="hidden lg:inline-block" />I love to build amazing
-            apps.
+      <div className="container h-screen max-w-7xl mx-auto flex px-5 pb-10 md:py-20 flex-row items-center">
+        <div className="md:flex-grow flex flex-col self-auto mb-16 md:mb-0 items-center text-center">
+          <h1 className="title-font md:text-6xl text-4xl mb-4 font-medium text-main_white">
+            Hi, I'm Guillaume Montassier
           </h1>
-          <p className="mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-            Laborum, voluptas natus?
+          <p className="mb-8 leading-relaxed md:text-xl">
+            I'm a french engineering student and I'm interested in artificial
+            intelligence, machine learning and web development. I'm currently
+            looking for an end-of-study internship in one of these areas. Scroll
+            dowmn if you want to learn more about me.
           </p>
           <div className="flex justify-center">
             <a
               href="#contact"
-              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+              className="inline-flex text-white bg-red-500 border-0 py-2 px-4 focus:outline-none hover:bg-green-600 rounded md:text-lg"
             >
-              Work With Me
+              Contact me
             </a>
             <a
               href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded md:text-lg"
             >
               See My Past Work
             </a>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        {/* <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
             className="object-cover object-center rounded"
             alt="hero"
-            src="./coding.svg"
+            src="./assets/hello.svg"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
